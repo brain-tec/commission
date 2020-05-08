@@ -35,5 +35,8 @@ class SaleOrderLine(models.Model):
         commission = self._get_commission_from_pricelist()
         if commission:
             for vals in res:
-                vals['commission'] = commission.id
+                if vals[0] == 0:
+                    vals[2]['commission'] = commission.id
+                else:
+                    vals['commission'] = commission.id
         return res
