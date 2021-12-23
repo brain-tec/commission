@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-22 08:15+0000\n"
-"PO-Revision-Date: 2021-12-21 02:39+0000\n"
+"PO-Revision-Date: 2021-12-22 22:39+0000\n"
 "Last-Translator: Sergio Zanchetta <primes2h@gmail.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -21,33 +21,30 @@ msgstr ""
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_analysis_report__quantity
-#, fuzzy
 msgid "# of Qty"
-msgstr "# di Qtà"
+msgstr "N. di q.tà"
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/sale_commission_mixin.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "%s commission agents"
-msgstr "%s agenti con commissioni"
+msgstr "%s agenti con provvigione"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_make_invoice_form
-#, fuzzy
 msgid "(keep empty for invoicing all the settlements)"
-msgstr "Mantieni vuot per fatturare tutte le provvigioni"
+msgstr "(lasciare vuoto per fatturare tutti i saldi)"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settled_wizard
-#, fuzzy
 msgid "(keep empty for making the settlement of all agents)"
-msgstr "Mantieni vuoto per creare le provvigioni per tutti gli agenti"
+msgstr "(lasciare vuoto per creare i saldi di tutti gli agenti)"
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/sale_commission_mixin.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "1 commission agent"
-msgstr "1 agente con commissioni"
+msgstr "1 agente con provvigione"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.report_settlement
@@ -150,7 +147,7 @@ msgstr "Importo"
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.report_settlement
 msgid "Amount settled"
-msgstr "Importo stabilito"
+msgstr "Importo saldato"
 
 #. module: sale_commission
 #: model:ir.model.fields.selection,name:sale_commission.selection__res_partner__settlement__annual
@@ -159,6 +156,7 @@ msgstr "Annuale"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_account_move_line__any_settled
+#, fuzzy
 msgid "Any Settled"
 msgstr "Qualsiasi provvigione liquidata"
 
@@ -186,13 +184,13 @@ msgstr "Annulla"
 #. module: sale_commission
 #: model:ir.model.fields.selection,name:sale_commission.selection__sale_commission_settlement__state__cancel
 msgid "Canceled"
-msgstr "Cancellato"
+msgstr "Annullato"
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/settlement.py:0
 #, python-format
 msgid "Cannot cancel an invoiced settlement."
-msgstr "Non si può cancellare una provvigione fatturata."
+msgstr "Impossibile annullare un saldo fatturato."
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_analysis_report__categ_id
@@ -204,7 +202,7 @@ msgstr "Categoria prodotto"
 #: model:ir.model.fields,help:sale_commission.field_res_partner__agent
 #: model:ir.model.fields,help:sale_commission.field_res_users__agent
 msgid "Check this field if the partner is a creditor or an agent."
-msgstr "Spunta questo campo se il partner è un creditore o un agente."
+msgstr "Selezionare il campo se il partner è un creditore o un agente."
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/sale_commission_mixin.py:0
@@ -311,7 +309,7 @@ msgstr "Contatto"
 #: model:ir.actions.act_window,name:sale_commission.action_commission_make_invoices
 #: model:ir.ui.menu,name:sale_commission.menu_commission_make_invoices
 msgid "Create commission invoices"
-msgstr "Crea fatture commissioni"
+msgstr "Crea fatture di provvigione"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_make_invoice_form
@@ -328,7 +326,7 @@ msgstr "Fatture create"
 #: code:addons/sale_commission/wizard/wizard_settle.py:0
 #, python-format
 msgid "Created Settlements"
-msgstr "Provvigioni Create"
+msgstr "Saldi creati"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_account_invoice_line_agent__create_uid
@@ -398,7 +396,7 @@ msgstr "Mese"
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_sale_commission_mixin_agent_only
 msgid "Discard"
-msgstr "Annulla"
+msgstr "Abbandona"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_account_invoice_line_agent__display_name
@@ -446,7 +444,7 @@ msgstr "Percentuale fissa"
 #: model:ir.model.fields,field_description:sale_commission.field_product_product__commission_free
 #: model:ir.model.fields,field_description:sale_commission.field_product_template__commission_free
 msgid "Free of commission"
-msgstr "Libero da commissioni"
+msgstr "Senza provvigione"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_section__amount_from
@@ -456,9 +454,8 @@ msgstr "Da"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_make_invoice__from_settlement
-#, fuzzy
 msgid "From Settlement"
-msgstr "Da Provvigione"
+msgstr "Da saldo"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_form
@@ -546,9 +543,8 @@ msgstr "Riga fattura"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.invoice_line_agent_tree
-#, fuzzy
 msgid "Invoice line agents and commissions"
-msgstr "Riga fattura agenti e commissioni"
+msgstr "Riga fattura agenti e provvigioni"
 
 #. module: sale_commission
 #: model:ir.model.fields.selection,name:sale_commission.selection__sale_commission_settlement__state__invoiced
@@ -603,7 +599,7 @@ msgstr "Ultima modifica il"
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_settlement_line__write_uid
 #: model:ir.model.fields,field_description:sale_commission.field_sale_order_line_agent__write_uid
 msgid "Last Updated by"
-msgstr "Ultima modifica di"
+msgstr "Ultimo aggiornamento di"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_account_invoice_line_agent__write_date
@@ -615,39 +611,36 @@ msgstr "Ultima modifica di"
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_settlement_line__write_date
 #: model:ir.model.fields,field_description:sale_commission.field_sale_order_line_agent__write_date
 msgid "Last Updated on"
-msgstr "Ultima modifica il"
+msgstr "Ultimo aggiornamento il"
 
 #. module: sale_commission
 #: model:ir.model,name:sale_commission.model_sale_commission_settlement_line
-#, fuzzy
 msgid "Line of a commission settlement"
-msgstr "Riga liquidazione provvigione"
+msgstr "Riga di saldo provvigione"
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/settlement.py:0
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_form
-#, fuzzy, python-format
+#, python-format
 msgid "Make invoice"
-msgstr "Crea fattura"
+msgstr "Prepara fattura"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_make_invoice_form
-#, fuzzy
 msgid "Make invoices"
-msgstr "Crea fatture"
+msgstr "Prepara fatture"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settled_wizard
-#, fuzzy
 msgid "Make settlements"
-msgstr "Crea Provvigioni"
+msgstr "Prepara saldi"
 
 #. module: sale_commission
 #: model:ir.model,name:sale_commission.model_sale_commission_mixin
 msgid "Mixin model for applying to any object that wants to handle commissions"
 msgstr ""
-"Modello mixin da applicare a qualsiasi oggetto che vuole gestire le "
-"commissioni"
+"Modello mixin da applicare a qualsiasi oggetto che voglia gestire le "
+"provvigioni"
 
 #. module: sale_commission
 #: model:ir.model,name:sale_commission.model_sale_commission_line_mixin
@@ -655,8 +648,8 @@ msgid ""
 "Mixin model for having commission agent lines in any object inheriting from "
 "this one"
 msgstr ""
-"Modello mixin per avere le righe commissione agente in qualsiasi oggetto che "
-"le erediti da questo"
+"Modello mixin per avere righe di provvigione agente in qualsiasi oggetto che "
+"erediti dall'attuale"
 
 #. module: sale_commission
 #: model:ir.model.fields.selection,name:sale_commission.selection__res_partner__settlement__monthly
@@ -676,23 +669,21 @@ msgstr "Importo netto"
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/sale_commission_mixin.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "No commission agents"
-msgstr "Nessun agente con commissioni"
+msgstr "Nessun agente con provvigione"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_sale_commission_analysis_search
-#, fuzzy
 msgid "Not Settled"
-msgstr "Non liquidato"
+msgstr "Non saldata"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_account_invoice_line_agent__object_id
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_line_mixin__object_id
 #: model:ir.model.fields,field_description:sale_commission.field_sale_order_line_agent__object_id
-#, fuzzy
 msgid "Parent"
-msgstr "Genitore"
+msgstr "Principale"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_analysis_report__partner_id
@@ -728,6 +719,7 @@ msgstr "Subtotale prezzo"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_analysis_report__price_unit
+#, fuzzy
 msgid "Price unit"
 msgstr "Prezzo unitario"
 
@@ -756,14 +748,12 @@ msgstr "Trimestrale"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_form
-#, fuzzy
 msgid "Rates definition"
-msgstr "Definizione Aliquote"
+msgstr "Definizione tariffe"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_move_form
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_order_agent_form_inherit
-#, fuzzy
 msgid "Regenerate agents"
 msgstr "Rigenera agenti"
 
@@ -811,22 +801,20 @@ msgstr "Sezioni"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settled_wizard
-#, fuzzy
 msgid "Select the date up to which you want to make the settlements:"
-msgstr "Seleziona la data fino a cui vuoi creare le provvigioni:"
+msgstr "Selezionare la data fino alla quale preparare i saldi:"
 
 #. module: sale_commission
 #: model:ir.model.fields.selection,name:sale_commission.selection__res_partner__settlement__semi
 msgid "Semi-annual"
-msgstr "Semi-annuale"
+msgstr "Semestrale"
 
 #. module: sale_commission
 #: model:ir.actions.act_window,name:sale_commission.action_agents_settlement
 #: model:ir.ui.menu,name:sale_commission.menu_agents_settlement
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settled_wizard
-#, fuzzy
 msgid "Settle commissions"
-msgstr "Liquidazione commissioni"
+msgstr "Salda provvigioni"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_account_invoice_line_agent__settled
@@ -835,15 +823,14 @@ msgstr "Liquidazione commissioni"
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_sale_commission_analysis_search
 #, fuzzy
 msgid "Settled"
-msgstr "Approvvigionato"
+msgstr "Saldata"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_partner_form_agent
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_line_tree
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_tree
-#, fuzzy
 msgid "Settled total"
-msgstr "Approvvigionamento Totale"
+msgstr "Totale saldato"
 
 #. module: sale_commission
 #: model:ir.model,name:sale_commission.model_sale_commission_settlement
@@ -855,54 +842,48 @@ msgstr "Approvvigionamento Totale"
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_make_invoice__settlement_ids
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_settlement_line__settlement_id
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_form
-#, fuzzy
 msgid "Settlement"
-msgstr "Approvvigionamento"
+msgstr "Saldo"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_line_graph
-#, fuzzy
 msgid "Settlement analysis"
-msgstr "Analisi Provvigioni"
+msgstr "Analisi saldi"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_settlement__line_ids
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_form
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_line_tree
-#, fuzzy
 msgid "Settlement lines"
-msgstr "Righe provvigioni"
+msgstr "Righe saldo"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_line_search
-#, fuzzy
 msgid "Settlement lines search"
-msgstr "Ricerca righe provvigioni"
+msgstr "Ricerca righe saldo"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_res_partner__settlement
 #: model:ir.model.fields,field_description:sale_commission.field_res_users__settlement
-#, fuzzy
 msgid "Settlement period"
-msgstr "Periodo Approvvigionamento"
+msgstr "Periodo di saldo"
 
 #. module: sale_commission
 #: model:ir.actions.report,name:sale_commission.action_report_settlement
 msgid "Settlement report"
-msgstr "Report provvigioni"
+msgstr "Resoconto saldi"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_search
 msgid "Settlement search"
-msgstr "Ricerca provvigioni"
+msgstr "Ricerca saldi"
 
 #. module: sale_commission
 #: model:ir.model.fields,help:sale_commission.field_account_bank_statement_line__settlement_id
 #: model:ir.model.fields,help:sale_commission.field_account_move__settlement_id
 #: model:ir.model.fields,help:sale_commission.field_account_payment__settlement_id
-#, fuzzy
 msgid "Settlement that generates this invoice"
-msgstr "Liquidazione che genera questa fattura"
+msgstr "Saldo che genera la fattura"
 
 #. module: sale_commission
 #: model:ir.actions.act_window,name:sale_commission.action_settle_commission
@@ -910,9 +891,8 @@ msgstr "Liquidazione che genera questa fattura"
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_make_invoice_form
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_partner_form_agent
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_tree
-#, fuzzy
 msgid "Settlements"
-msgstr "Provvigioni"
+msgstr "Saldi"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_settlement_line__invoice_line_id
@@ -931,19 +911,19 @@ msgstr "Stato"
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/sale_commission.py:0
-#, fuzzy, python-format
+#, python-format
 msgid "The lower limit cannot be greater than upper one."
-msgstr "Il limite inferiore non può essere più grande del maggiore."
+msgstr "Il limite inferiore non può essere maggiore di quello superiore."
 
 #. module: sale_commission
 #: model:ir.model.fields,help:sale_commission.field_account_invoice_line_agent__invoice_id
 msgid "The move of this entry line."
-msgstr "Il movimento di questa registrazione."
+msgstr "Movimento della riga di registrazione."
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_sale_commission_analysis_search
 msgid "This Year"
-msgstr "Quest'anno"
+msgstr "Anno corrente"
 
 #. module: sale_commission
 #: model:ir.model.fields,help:sale_commission.field_res_partner__commission_id
@@ -952,11 +932,13 @@ msgid ""
 "This is the default commission used in the sales where this agent is "
 "assigned. It can be changed on each operation if needed."
 msgstr ""
-"Questa è la commissione di default usata nelle vendita assegnata a questo "
-"agente. Può essere cambiato a ogni operazione se necessario."
+"Provvigione predefinita utilizzata nelle vendite alle quali è stato "
+"assegnato l'agente. Se necessario, può essere cambiata per ciascuna "
+"operazione."
 
 #. module: sale_commission
 #: model_terms:ir.actions.act_window,help:sale_commission.action_sale_commission_analysis_report
+#, fuzzy
 msgid ""
 "This report performs analysis on your commissions added in invoice lines. "
 "You can check the amount and lines that will be settled by date, product, "
@@ -973,7 +955,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_line_search
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settlement_search
 msgid "This year"
-msgstr "Quest'anno"
+msgstr "Anno corrente"
 
 #. module: sale_commission
 #: model:ir.model.fields,field_description:sale_commission.field_sale_commission_section__amount_to
@@ -1007,48 +989,48 @@ msgstr "Fino a"
 #. module: sale_commission
 #: model:ir.model,name:sale_commission.model_sale_commission_make_invoice
 msgid "Wizard for making an invoice from a settlement"
-msgstr "Procedura per generare una fattura da una provvigione"
+msgstr "Procedura per preparare una fattura da una provvigione"
 
 #. module: sale_commission
 #: model:ir.model,name:sale_commission.model_sale_commission_make_settle
 msgid "Wizard for settling commissions in invoices"
-msgstr "Wizard per liquidare le commissioni in fatture"
+msgstr "Procedura per saldare le provvigioni nelle fatture"
 
 #. module: sale_commission
 #: model:ir.model.constraint,message:sale_commission.constraint_account_invoice_line_agent_unique_agent
 #: model:ir.model.constraint,message:sale_commission.constraint_sale_commission_line_mixin_unique_agent
 #: model:ir.model.constraint,message:sale_commission.constraint_sale_order_line_agent_unique_agent
 msgid "You can only add one time each agent."
-msgstr "Puoi aggiungere un agente alla volta."
+msgstr "È possibile aggiungere un solo agente alla volta."
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/account_move.py:0
 #, python-format
 msgid "You can't cancel an invoice with settled lines"
-msgstr "Non puoi annullare una fattura con righe liquidate"
+msgstr "Impossibile annullare una fattura con righe saldate"
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/settlement.py:0
 #, python-format
 msgid "You can't delete invoiced settlements."
-msgstr "Non puoi cancellare provvigioni fatturate."
+msgstr "Impossibile eliminare saldi fatturati."
 
 #. module: sale_commission
 #: code:addons/sale_commission/models/account_move.py:0
 #, python-format
 msgid "You can't modify a settled line"
-msgstr "Non puoi modificare una riga liquidata"
+msgstr "Impossibile modificare una riga saldata"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_make_invoice_form
 msgid "_Cancel"
-msgstr "_Cancel"
+msgstr "_Annulla"
 
 #. module: sale_commission
 #: model_terms:ir.ui.view,arch_db:sale_commission.sale_commission_make_invoice_form
 #: model_terms:ir.ui.view,arch_db:sale_commission.view_settled_wizard
 msgid "or"
-msgstr "o"
+msgstr "oppure"
 
 #, fuzzy
 #~ msgid "Journal Entries"
