@@ -4,13 +4,13 @@
 {
     "name": "Sales commissions - Geo assignation",
     "summary": "Assign agents to partners according to their location",
-    "version": "14.0.1.0.0",
+    "version": "14.0.1.0.1",
     "development_status": "Production/Stable",
     "category": "Sales Management",
     "website": "https://github.com/OCA/commission",
     "author": "Agile Business Group, Odoo Community Association (OCA)",
     "maintainers": ["eLBati"],
-    "license": "LGPL-3",
+    "license": "AGPL-3",
     "application": False,
     "installable": True,
     "depends": [
