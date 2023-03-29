@@ -4,10 +4,10 @@
 
 {
     'name': 'Commissions in contract invoices',
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'author': 'Tecnativa, '
               'Odoo Community Association (OCA)',
-    'website': 'https://www.tecnativa.com/',
+    'website': 'https://github.com/OCA/commission',
     'category': 'Generic Modules/Sales & Purchases',
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
