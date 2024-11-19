@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-14 11:35+0000\n"
+"PO-Revision-Date: 2024-11-18 12:06+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,17 +14,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_partial_reconcile__account_invoice_line_agent_partial_ids
 msgid "Account Invoice Line Agent Partial"
-msgstr ""
+msgstr "Riga agente parziale fattura"
 
 #. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent_partial__account_partial_reconcile_id
 msgid "Account Partial Reconcile"
-msgstr ""
+msgstr "Riconcilia parziale fattura"
 
 #. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent_partial__agent_line
@@ -107,12 +107,12 @@ msgstr "Riga fattura agente"
 #. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent__invoice_line_agent_partial_ids
 msgid "Invoice Line Agent Partial"
-msgstr ""
+msgstr "Riga fattura parziale agente"
 
 #. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent__is_fully_settled
 msgid "Is Fully Settled"
-msgstr ""
+msgstr "E' totalmente liquidata"
 
 #. module: sale_commission_partial_settlement
 #: model:ir.model.fields,field_description:sale_commission_partial_settlement.field_account_invoice_line_agent____last_update
@@ -178,7 +178,7 @@ msgstr "Importo regolato"
 #. module: sale_commission_partial_settlement
 #: model:ir.model,name:sale_commission_partial_settlement.model_sale_commission_settlement
 msgid "Settlement"
-msgstr ""
+msgstr "Liquidazione"
 
 #. module: sale_commission_partial_settlement
 #: model:ir.model,name:sale_commission_partial_settlement.model_sale_commission_make_settle
